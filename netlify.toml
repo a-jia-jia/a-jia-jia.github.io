@@ -1,0 +1,5 @@
+# Netlify 部署配置：静态站直接发布仓库根目录，
+# 排行榜接口在 netlify/functions/leaderboard.js。
+[build]
+  publish = "."
+  functions = "netlify/functions"

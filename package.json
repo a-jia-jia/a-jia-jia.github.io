@@ -1,0 +1,1 @@
+{"dependencies":{"@netlify/blobs":"^8.2.0"},"description":"家家和布里的休闲小游戏合集：静态站 + Netlify Functions 排行榜","engines":{"node":">=18"},"name":"a-jia-jia-games","private":true,"version":"1.0.0"}
