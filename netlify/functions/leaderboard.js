@@ -7,7 +7,7 @@
 
 'use strict';
 
-const { getStore } = require('@netlify/blobs');
+const { connectLambda, getStore } = require('@netlify/blobs');
 
 const GAMES = ['runner', 'stack'];
 const MAX_ENTRIES = 10;
@@ -43,6 +43,7 @@ async function loadScores(store, game) {
 
 exports.handler = async (event) => {
   try {
+    connectLambda(event);
     const store = getStore('leaderboard');
 
     if (event.httpMethod === 'GET') {
